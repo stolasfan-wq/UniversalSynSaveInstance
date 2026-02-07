@@ -2228,12 +2228,12 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 			"TextChatService",
 			ModuleScript = nil,
 		},
-		IgnoreDefaultPlayerScripts = true,
-		SaveBytecode = false,
+		IgnoreDefaultPlayerScripts = false,
+		SaveBytecode = true,
 
 		IgnoreProperties = {},
 
-		IgnoreList = { "CoreGui", "CorePackages" },
+		IgnoreList = {},
 
 		ExtraInstances = {},
 		NilInstances = false,
@@ -2260,9 +2260,9 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		IsolateLocalPlayerCharacter = false,
 		IsolatePlayers = false,
 		IsolateStarterPlayer = false,
-		RemovePlayerCharacters = true,
+		RemovePlayerCharacters = false,
 
-		SaveNotCreatable = false,
+		SaveNotCreatable = true,
 		NotCreatableFixes = {
 			-- "InputObject",
 			-- "LodDataEntity",
